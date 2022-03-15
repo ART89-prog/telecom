@@ -2,7 +2,8 @@ $(() => {
 
     $('.reviews_items').slick({
         infinite: true,
-        dots: true,
+        dots: false,
+        arrows: true,
         infinite: true,
         slidesToShow: 2,
         slidesToScroll: 1,

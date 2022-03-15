@@ -24,7 +24,7 @@
 		<!-- Подключение файлов стилей -->
 		<link rel="stylesheet" href="css/fancybox.css">
 		<link rel="stylesheet" href="css/slick.css">		
-		<link rel="stylesheet" href="css/slick-theme.css">
+		<!-- <link rel="stylesheet" href="css/slick-theme.css"> -->
 		<link rel="stylesheet" href="css/styles.css">
 
 		<link rel="stylesheet" href="css/response_1187.css" media="print, (max-width: 1187px)">
@@ -38,19 +38,18 @@
 			<div class="main">
 				<header>
 					<div class="cont row">
-						<a href="#" class="logo">
-							<img src="images/logo.svg" alt="">
-						</a>
-
-						<div class="desc">Беспроводной интернет в<br>
-							Москве и Московской области</div>
-
+						<div class="header_left">
+							<a href="#" class="logo">
+								<img src="images/logo.svg" alt="">								
+							</a>
+							<div class="desc"><span>Беспроводной интернет</span> в Москве<br> и Московской области</div>	
+						</div>
+						
 						<div class="contacts">
 							<div class="phone">
 								<a href="tel:74996817089">+7 (499) 681-70-89</a>
 								<div class="time">Без выходных с 09:00 до 22:00</div>
 							</div>
-
 							<button class="callback_btn modal_btn" data-content="#callback_modal">Заказать звонок</button>
 						</div>
 					</div>
@@ -59,8 +58,11 @@
 
 				<section class="first_section">
 					<div class="cont">
+					
 						<div class="info">
-							<div class="first_section-title">Интернет для любого бизнеса по лучшей цене за 1900</div>
+							<div class="first_section-title">Интернет для любого бизнеса <span class="price-blau">по лучшей цене</span> за <span class="price-green">1900 
+								<img src="images/price.svg" alt=""></span> 
+							</div>
 							<div class="first_section-desc">Мы есть в каждом здании Москвы и области</div>
 							<ul class="first_section-list">
 								<li>
@@ -86,16 +88,28 @@
 								</li>
 							</ul>
 							<div class="btns">
-								<div><button class="btn modal_btn" data-content="#callback_modal">
+								<div><button class="btn modal_btn btn-white" data-content="#callback_modal3">
 									<span>Оставить заявку на подключение</span>
 								</button></div>
 
-								<div><button class="btn modal_btn" data-content="#callback_modal">
+								<div><button class="btn modal_btn btn-blau" data-content="#callback_modal4">
 									<span>Получить консультацию</span>
 								</button>						
 							</div>
+						</div>	
+						</div>	
+						<div class="first_section-img">
+							<img src="images/first-section-img.png" alt="">
 						</div>
-						<ul class="advantages_list">
+					
+					</div>
+				</section>
+
+
+
+				<div class="benefits">
+					<div class="cont">
+						<ul class="benefits_list">
 							<li>
 								<img src="images/advantages1.svg" alt="">
 								<span>Работаем<br> с 2002 года</span>
@@ -105,12 +119,12 @@
 								<span>Профессиональное<br>	оборудование</span>
 							</li>
 							<li>
-								<img src="images/advantages2.svg" alt="">
+								<img src="images/advantages3.svg" alt="">
 								<span>Техподдержка<br> 24 часа</span>
 							</li>						
 						</ul>
 					</div>
-				</section>
+				</div>
 
 
 				<section class="company">
@@ -171,35 +185,37 @@
 
 
 				<section class="application-form">
-					<div class="cont">
-						<div class="application-form_title title">Можем подключить интернет бесплатно на 7 дней<br>
-							для пробы, чтобы вы убедились в качестве интернета </div>
-						<form class="callback_form" id="feedback-form-2">
-                            <div class="line">
-                                <div class="field_box">
-                                    <div class="field">
-                                        <input type="text" name="name" value="" class="input required" required="" placeholder="Ваше имя">
-                                    </div>
-                                    <div class="field">
-                                        <input type="tel" name="phone" value="" class="input required" required="" placeholder="Tелефон" inputmode="verbatim">
-                                    </div>  
-                                </div>                                
-                                <div class="field">
-                                    <button type="submit" class="submit_btn">
-                                        <span>Оставить заявку</span>
-                                    </button>     
-                                </div>                           
-                            </div> 
-                            <div class="line">
-                                <div class="checkbox">
-                                    <input type="checkbox" name="politic" id="check1" checked="">
-                                    <label for="check1" class="checkbox">Я согласен на <a href="#">обработку персональных данных</a></label>
-                                </div>      
-                            </div>                            
-                        </form>
-						<div class="application-form_img">
-							<img src="images/form_img.png" alt="">
-						</div>
+					<div class="cont">	
+						<div class="application-form_wrap">
+							<form class="callback_form form" id="feedback-form-2">
+								<div class="application-form_title">Можем подключить интернет бесплатно на 7 дней<br>
+								для пробы, чтобы вы убедились в качестве интернета </div>
+								<div class="line">
+									<div class="field_box">
+										<div class="field">
+											<input type="text" name="name" value="" class="input required" required="" placeholder="Ваше имя">
+										</div>
+										<div class="field">
+											<input type="tel" name="phone" value="" class="input required" required="" placeholder="Tелефон" inputmode="verbatim">
+										</div>  
+									</div>                                
+									<div class="field">
+										<button type="submit" class="submit_btn">
+											<span>Оставить заявку</span>
+										</button>     
+									</div>                           
+								</div> 
+								<div class="line">
+									<div class="checkbox">
+										<input type="checkbox" name="politic" id="check1" checked="">
+										<label for="check1" class="checkbox">Я согласен на <a href="#">обработку персональных данных</a></label>
+									</div>      
+								</div>                            
+							</form>
+							<div class="application-form_img">
+								<img src="images/form_img.png" alt="">
+							</div>	
+						</div>					
 					</div>					
 				</section>
 
@@ -207,7 +223,7 @@
 
 				<section class="advantages">
 					<div class="cont">
-						<div class="advantages_title title">В чём ещё преимущества нашего <span>беспроводного Интернета</span> для бизнеса</div>
+						<div class="advantages_title title">В чём ещё преимущества нашего <span>беспроводного<br> Интернета</span> для бизнеса</div>
 						<div class="advantages_items">
 							<div class="advantages_item">
 								<div class="advantages_item-info">
@@ -253,7 +269,7 @@
 
 				<section class="tarif">
 					<div class="cont">
-						<div class="tarif_title title">При желании можно ещё увеличить<br> скорость интернета до 150 мб/сек.</div>
+						<div class="tarif_title">При желании можно ещё увеличить<br> скорость интернета до 150 мб/сек.</div>
 						<div class="tarif_items">
 							<div class="tarif_item">
 								<div class="tarif_item-top">
@@ -288,7 +304,7 @@
 										<span>Динамический IP</span>
 									</li>
 								</ul>
-								<a href="#">
+								<a href="#" class="tarif_link">
 									<span>Подключить тариф</span>
 								</a>
 							</div>
@@ -325,7 +341,7 @@
 										<span>Cтатический IP</span>
 									</li>
 								</ul>
-								<a href="#">
+								<a href="#" class="tarif_link">
 									<span>Подключить тариф</span>
 								</a>
 							</div>
@@ -337,32 +353,41 @@
 
 				<section class="additionally">
 					<div class="cont">
-						<div class="additionally_title">Также можем подключить вам и настроить</div>
+						<div class="additionally_title title">Также можем подключить вам и настроить</div>
 						<div class="additionally_items">
 							<div class="additionally_item">
-								<div class="additionally_item-title">IP-телефония<div>      
-								<div class="additionally_item-text">Даже если вы не успели оплатить	интернет вовремя, мы его не отключаем</div>
+								<div class="additionally_item-info">
+									<div class="additionally_item-title">IP-телефония</div>     
+									<div class="additionally_item-text">Даже если вы не успели оплатить	интернет вовремя, мы его не отключаем</div>	
+								</div>								
 								<div class="additionally_item-img">
 									<img src="images/additionally1.svg" alt="">
 								</div>
 							</div>
 							<div class="additionally_item">
-								<div class="additionally_item-title">Видеонаблюдение<div>      
-								<div class="additionally_item-text">Профессионально подключим и настроим видеонаблюдение для полного контроля объектов на расстоянии</div>
+								<div class="additionally_item-info">
+									<div class="additionally_item-title">Видеонаблюдение</div>     
+									<div class="additionally_item-text">Профессионально подключим и настроим видеонаблюдение для полного контроля объектов на расстоянии</div>	
+								</div>
+								
 								<div class="additionally_item-img">
 									<img src="images/additionally2.svg" alt="">
 								</div>
 							</div>
 							<div class="additionally_item">
-								<div class="additionally_item-title">Усиление GSM<div>      
-								<div class="additionally_item-text">Профессионально подключим и максимально усилим сигнал мобильной связи</div>
+								<div class="additionally_item-info">
+									<div class="additionally_item-title">Усиление GSM</div>    
+									<div class="additionally_item-text">Профессионально подключим и максимально усилим сигнал мобильной связи</div>	
+								</div>								
 								<div class="additionally_item-img">
 									<img src="images/additionally3.svg" alt="">
 								</div>
 							</div>
 							<div class="additionally_item">
-								<div class="additionally_item-title">Cпутниковое и цифровое ТВ<div>      
-								<div class="additionally_item-text">Профессионально подключим и настроим спутниковое и цифровое ТВ</div>
+								<div class="additionally_item-info">
+									<div class="additionally_item-title">Cпутниковое и цифровое ТВ</div>      
+									<div class="additionally_item-text">Профессионально подключим и настроим спутниковое и цифровое ТВ</div>	
+								</div>								
 								<div class="additionally_item-img">
 									<img src="images/additionally4.svg" alt="">
 								</div>
@@ -383,7 +408,7 @@
 								<div class="reviews_item-name">Владимир Силов</div>
 								<div class="reviews_item-company">Компания IT Consult</div>
 								<div class="reviews_item-text">Не хватало интернета на 12 компьютеров. Оставил заявку на сайте,	в тот же день приехал инженер, установил оборудование и все подробно объяснил. Скорость заметно увеличилась, а рсходы уменьшились втрое. Все довольны качеством	проделанной работы.</div>
-							</div>
+							</div>	
 							<div class="reviews_item">
 								<div class="reviews_item-img">
 									<img src="images/reviews2.jpg" alt="">
@@ -415,92 +440,46 @@
 
 				<section class="contacts">
                     <div class="cont">
-                        <div class="contacts_title title">Контакты</div>                        
-                        <div class="contacts_wrapper">
-                            <div class="map_wrap">
+                        <div class="contacts_title title">Наши контакты</div>                        
+                        <div class="contacts_wrapper">                
+							<div class="contacts_items">
+								<div class="contacts_item">
+									<div class="contacts_item-info">
+										<div class="contacts_item-title">Телефон:</div>
+										<a href="tel:74996817108" class="contacts_item-text contacts_item-text-phone">+7 (499) 681-71-08</a>
+									</div>
+								</div>
+								<div class="contacts_item">                                    
+									<div class="contacts_item-info">
+										<div class="contacts_item-title">E-mail:</div>
+										<a href="mailto:info@live-telecom.ru" class="contacts_item-text contacts_item-text-email">info@live-telecom.ru</a>
+									</div>
+								</div><br><br>
+								<div class="contacts_item">                                       
+									<div class="contacts_item-info">
+										<div class="contacts_item-title">Адрес:</div>
+										<div class="contacts_item-text">107140, г. Москва, <br>	пер. 1-й Красносельский, д.3, оф. 35</div>
+									</div>
+								</div>
+								<div class="contacts_item">
+									<div class="contacts_item-info">
+										<div class="contacts_item-title">Часы работы</div>
+										<div class="contacts_item-text">Без выходных c 09:00 до 22:00</div>
+									</div>
+								</div><br>
+								<div class="contacts_item">
+									<div class="contacts_item-info">
+										<div class="contacts_item-title">Реквизиты:</div>
+										<div class="contacts_item-text">«Глобал Телеком»<br>
+											Руководитель:
+											Шелгунов Андрей Сергеевич<br>
+											ИНН: 7708317167<br> 
+											ОГРН: 1177746465731</div>
+									</div>
+								</div>                                  
+							</div>
+							<div class="map_wrap">
 								<div id="map"></div>
-                            </div>
-
-                            <div class="contacts_right">
-                                <div class="contacts_items">
-                                    
-                                    <div class="contacts_item">
-                                        <div class="contacts_item-icon">
-                                            <img src="image/contacts2.svg" alt="">
-                                        </div>
-                                        <div class="contacts_item-info">
-                                            <div class="contacts_item-title">Телефон:</div>
-                                            <a href="tel:74957776535" class="contacts_item-text">+7-495-777-65-35</a>
-                                        </div>
-                                    </div>
-                                    <div class="contacts_item">
-                                        <div class="contacts_item-icon">
-                                            <img src="image/contacts3.svg" alt="">
-                                        </div>
-                                        <div class="contacts_item-info">
-                                            <div class="contacts_item-title">E-mail:</div>
-                                            <a href="mailto:geocompany2009@ya.ru" class="contacts_item-text">geocompany2009@ya.ru</a>
-                                        </div>
-                                    </div>
-									<div class="contacts_item">
-                                        <div class="contacts_item-icon">
-                                            <img src="image/contacts1.svg" alt="">
-                                        </div>
-                                        <div class="contacts_item-info">
-                                            <div class="contacts_item-title">Московский офис</div>
-                                            <div class="contacts_item-text">117198, г. Москва,<br> ул.Миклухо-Маклая, вл. 8 стр. 3</div>
-                                        </div>
-                                    </div>
-                                    <div class="contacts_item">
-                                        <div class="contacts_item-icon">
-                                            <img src="image/contacts4.svg" alt="">
-                                        </div>
-                                        <div class="contacts_item-info">
-                                            <div class="contacts_item-title">Пн - Пт. <span>с 8.00 до 18.00</span><br>
-                                                Сб.-Вс. <span>с 9.00 до 17.00</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="contacts_item">
-                                        <div class="contacts_item-icon">
-                                            <img src="image/contacts1.svg" alt="">
-                                        </div>
-                                        <div class="contacts_item-info">
-                                            <div class="contacts_item-title">Областной офис</div>
-                                            <div class="contacts_item-text"> 141100, Московская область,<br> г. Щелково, ул. Советская, 3</div>
-                                        </div>
-                                    </div>
-                                    <div class="contacts_item">
-                                        <div class="contacts_item-icon">
-                                            <img src="image/contacts2.svg" alt="">
-                                        </div>
-                                        <div class="contacts_item-info">
-                                            <div class="contacts_item-title">Телефон:</div>
-                                            <a href="tel:+79099195161" class="contacts_item-text">+7-909-919-51-61</a>
-                                        </div>
-                                    </div>
-                                    <div class="contacts_item">
-                                        <div class="contacts_item-icon">
-                                            <img src="image/contacts3.svg" alt="">
-                                        </div>
-                                        <div class="contacts_item-info">
-                                            <div class="contacts_item-title">E-mail:</div>
-                                            <a href="mailto:geocompany2009@ya.ru" class="contacts_item-text">geocompany2009@ya.ru</a>
-                                        </div>
-                                    </div>
-                                    <div class="contacts_item">
-                                        <div class="contacts_item-icon">
-                                            <img src="image/contacts4.svg" alt="">
-                                        </div>
-                                        <div class="contacts_item-info">
-                                            <div class="contacts_item-title">Пн - Пт. <span>с 8.00 до 21.00</span><br>
-                                                Сб.-Вс. <span>с 9.00 до 18.00</span>
-                                            </div>
-                                        </div>
-                                    </div> 
-
-                                </div>
-            
                             </div>
                         </div>                      
                     </div>
@@ -510,47 +489,43 @@
 
 				<section class="question">
 					<div class="cont">
-						<div class="question_left">
-							<div class="question_title title">Остались вопросы?</div>
-							<div class="question_text">Напишите ваш вопрос, мы свяжемся с вами в ближайшее время</div>
-						</div>
-						<div class="question_right">
-							<form class="calculation_form">
-								<div class="calculation_form-line">
-									<div class="calculation_form-field">
-										<input type="text" placeholder="Ваше имя:">
+						<div class="question_wrap">
+							<div class="question_left">
+								<div class="question_title title">Остались вопросы?</div>
+								<div class="question_text">Напишите ваш вопрос, мы свяжемся с вами в ближайшее время</div>
+							</div>
+							<div class="question_right">
+								<form class="question_form form">
+									<div class="question_form-line">
+										<div class="question_form-field">
+											<input type="text" placeholder="Ваше имя">
+										</div>
+										<div class="question_form-field">
+											<input type="tel" placeholder="Телефон">
+										</div>
 									</div>
-									<div class="calculation_form-field">
-										<input type="tel" placeholder="Телефон:" inputmode="verbatim">
+									<div class="question_form-line">
+										<div class="fieldset">
+											<textarea placeholder="Ваш вопрос"></textarea>
+										</div>                                
 									</div>
-								</div>
-								<div class="calculation_form-line">
-									<div class="fieldset">
-										<textarea placeholder="Введите текст:"></textarea>
-									</div>                                
-								</div>
-								<div class="calculation_form-line calculation_checkbox">
-									<input type="checkbox" name="politic" id="calculation_check2" checked="">
-									<label for="calculation_check2" class="checkbox">Даю согласие на обработку <a href="#"> персональных данных</a></label>
-								</div>
-								<div class="calculation_form-line">
-									<button type="submit" class="btn">
-										<span>Отправить</span>
-									</button>                                   
-								</div>
-							</form>
+									<div class="line">
+										<div class="checkbox">
+											<input type="checkbox" name="politic" id="check2" checked="">
+											<label for="check2" class="checkbox">Я согласен на <a href="#">обработку персональных данных</a></label>
+										</div>      
+									</div>   
+									<div class="question_form-line">
+										<button type="submit" class="btn submit_btn">
+											<span>Задать вопрос</span>
+										</button>                                   
+									</div>
+								</form>
+							</div>	
 						</div>
+						
 					</div>
 				</section>
-
-
-
-
-
-				
-
-
-
 
 			</div>
 
@@ -563,8 +538,6 @@
 					<div class="footer_text">Сайт разработал интернет-маркетолог Рафаиль Фалахеев со своей командой</div>
 				</div>				
 			</footer>
-
-
 			
 		</div>
 
@@ -575,8 +548,8 @@
 
 
 		<section class="modal" id="callback_modal">
-			<div class="modal_title">Заказать звонок</div>
-
+			<div class="modal_title">Обратный звонок</div>
+			<div class="modal_text">Мы перезвоним, ответим на вопросы </div>
 			<div class="modal_data">
 				<form action="" class="form" id="feedback-form-2">
 					<div class="line">
@@ -587,21 +560,93 @@
 
 					<div class="line">
 						<div class="field">
-							<input type="tel" name="phone" value="" class="input" placeholder="Телефон для связи *" required>
+							<input type="tel" name="phone" value="" class="input" placeholder="Телефон" required>
 						</div>
 					</div>
 
 					<div class="submit">
 						<button type="submit" class="submit_btn">
-							<span>Отправить заявку</span>
-							<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow"></use></svg>
+							<span>Оставить заявку</span>
 						</button>
 					</div>
 
-					<div class="agree">
-						Нажимая на кнопку «Отправить», я даю <a href="/" target="_blank">согласие на обработку персональных данных</a>
+					<div class="line">
+						<div class="checkbox">
+							<input type="checkbox" name="politic" id="check3" checked="">
+							<label for="check3" class="checkbox">Я согласен на <a href="#">обработку персональных данных</a></label>
+						</div>      
+					</div>   
+				</form>
+			</div>
+		</section>
+
+
+		<section class="modal" id="callback_modal3">
+			<div class="modal_title">Заявка на подключение</div>
+			<div class="modal_text">Мы перезвоним, ответим на вопросы <br>
+				и подключим услугу </div>
+			<div class="modal_data">
+				<form action="" class="form" id="feedback-form-2">
+					<div class="line">
+						<div class="field">
+							<input type="text" name="name" value="" class="input" placeholder="Ваше имя" required>
+						</div>
 					</div>
-					<input type="hidden" name="title" value="Заявка c сайта Специфика">
+
+					<div class="line">
+						<div class="field">
+							<input type="tel" name="phone" value="" class="input" placeholder="Телефон" required>
+						</div>
+					</div>
+
+					<div class="submit">
+						<button type="submit" class="submit_btn">
+							<span>Оставить заявку</span>
+						</button>
+					</div>
+
+					<div class="line">
+						<div class="checkbox">
+							<input type="checkbox" name="politic" id="check4" checked="">
+							<label for="check4" class="checkbox">Я согласен на <a href="#">обработку персональных данных</a></label>
+						</div>      
+					</div>   
+				</form>
+			</div>
+		</section>
+
+
+
+		<section class="modal" id="callback_modal4">
+			<div class="modal_title">Получить консультацию</div>
+			<div class="modal_text">Мы перезвоним, ответим на вопросы <br>
+				и подключим услугу </div>
+			<div class="modal_data">
+				<form action="" class="form" id="feedback-form-2">
+					<div class="line">
+						<div class="field">
+							<input type="text" name="name" value="" class="input" placeholder="Ваше имя" required>
+						</div>
+					</div>
+
+					<div class="line">
+						<div class="field">
+							<input type="tel" name="phone" value="" class="input" placeholder="Телефон" required>
+						</div>
+					</div>
+
+					<div class="submit">
+						<button type="submit" class="submit_btn">
+							<span>Оставить заявку</span>
+						</button>
+					</div>
+
+					<div class="line">
+						<div class="checkbox">
+							<input type="checkbox" name="politic" id="check5" checked="">
+							<label for="check5" class="checkbox">Я согласен на <a href="#">обработку персональных данных</a></label>
+						</div>      
+					</div>   
 				</form>
 			</div>
 		</section>
@@ -609,8 +654,13 @@
 
 
 
+
+
+
 		<section class="modal" id="callback_modal2">
-			<div class="modal_title">Спасибо!<br><br>Мы скоро свяжемся с Вами!</div>			
+			<img src="images/airplane.svg" alt="">
+			<div class="modal_title">Ваша заявка принята</div>	
+			<div class="modal_text">Мы перезвоним, ответим на вопросы</div>		
 		</section>
 
 
