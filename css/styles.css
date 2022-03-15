@@ -725,23 +725,23 @@ header .contacts .callback_btn:hover
     max-width: 896px;
     width: 100%;
     margin: 0 auto;
-  }
-  .field_box {
+}
+.field_box {
     display: flex;
-  }
-  .callback_form .line {
+}
+.callback_form .line {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: -14px;
     margin: 0 auto;
     width: 100%;
-  }
-  .callback_form .line .field {  
+}
+.callback_form .line .field {  
     width: 100%;
     margin-right: 14px;
-  }
-  .callback_form .line .field input {
+}
+.callback_form .line .field input {
     height: 59px;
     background-color: #ffffff;
     border-radius: 6px;
@@ -753,8 +753,8 @@ header .contacts .callback_btn:hover
     padding: 0 31px;
     border: none;
     border: 1px solid #ccd2d5;
-  }
-  .callback_form .line .submit_btn {
+}
+.callback_form .line .submit_btn {
     width: 196px;
     height: 59px;
     background-color: #fad31a;
@@ -765,20 +765,20 @@ header .contacts .callback_btn:hover
     font-weight: 300;
     color: #1e2021;
     margin-left: 10px;
-  }
-  .callback_form .line .submit_btn:hover {
+}
+.callback_form .line .submit_btn:hover {
     color: #fff;
     background: #eb7426;
-  }
-  .callback_form .checkbox {
+}
+.callback_form .checkbox {
     width: auto;
     margin-top: 29px;
-  }
-  input[type=checkbox] {
+}
+input[type=checkbox] {
     display: none;
     opacity: 0;
-  }
-  label.checkbox {
+}
+label.checkbox {
     font-family: var(--font_family);
     font-size: 16px;
     line-height: 24px;
@@ -792,12 +792,12 @@ header .contacts .callback_btn:hover
     vertical-align: middle;
     margin-left: auto;
     margin-right: auto;
-  }
+}
   label.checkbox a {
     text-decoration: underline;
     color: #7f7b7a;
-  }
-  label.checkbox:before {
+}
+label.checkbox:before {
     position: absolute;
     top: 3px;
     left: 3px;
@@ -809,8 +809,8 @@ header .contacts .callback_btn:hover
     height: 18px;
     border: 1px solid #dde0e4;
     border-radius: 3px;
-  }
-  label.checkbox:after {
+}
+label.checkbox:after {
     position: absolute;
     top: 6px;
     left: 7px;
@@ -823,22 +823,45 @@ header .contacts .callback_btn:hover
     opacity: 0;
     border-bottom: 1.5px solid #9DAED0;;
     border-left: 1.5px solid  #9DAED0;;
-  }
-  input[type=checkbox]:checked + label.checkbox:after {
+}
+input[type=checkbox]:checked + label.checkbox:after {
     opacity: 1;
-  }
+}
   ::-webkit-input-placeholder {
     color: #7d8083;
-  }
-  ::-moz-placeholder {
+}
+::-moz-placeholder {
     color: #7d8083;
-  }
+}
   :-moz-placeholder {
     color: #7d8083;
-  }
-  :-ms-input-placeholder {
+}
+:-ms-input-placeholder {
     color: #7d8083;
+}
+
+
+
+
+
+
+  
+.contacts .map_wrap {
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    width: calc(100% - 730px);
+    height: 632px;
+    transform: translateZ(0);
+    border-radius: 5px;
   }
+#map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
 
 
@@ -847,6 +870,78 @@ header .contacts .callback_btn:hover
 
 
 
+
+
+.calculation_form {
+    max-width: 710px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .calculation_form-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -15px;
+    width: 100%;
+  }
+  .calculation_form-line > * {
+    width: calc(100%/2 - 15px);
+    margin-left: 15px;
+    margin-bottom: 19px;
+  }
+  .calculation_form-field input {
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #CDE1EF;
+    border-radius: 10px;
+    height: 50px;
+    padding: 0 19px;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000;
+    font-family: "Golos";
+  }
+  .calculation_form-line textarea {
+    background: #FFFFFF;
+    border: 1px solid #CDE1EF;
+    border-radius: 10px;
+    resize: none;
+    padding: 15px 19px;
+    width: 100%;
+    height: 130px;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000;
+    font-family: "Golos";
+  }
+  .fieldset {
+    width: 100%;
+  }
+  .calculation_form-field button {
+    background: #0084FF;
+    box-shadow: 0px 10px 19px rgba(0, 132, 255, 0.31);
+    border-radius: 10px;
+    width: 100%;
+    height: 50px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  .calculation_checkbox {
+    margin: 0 auto;
+  }
+  .calculation label.checkbox {
+    width: auto;
+    line-height: 32px;
+  }
+  .calculation .btn {
+    width: 223px;
+  }
+  
 
 
 
