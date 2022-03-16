@@ -176,6 +176,9 @@
     .question {
         padding-bottom: 43px;
     }
+    .company_title br {
+        display: none;
+    }
 
 
 

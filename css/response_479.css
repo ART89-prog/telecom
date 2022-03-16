@@ -22,7 +22,19 @@
         font-size: 14px;
         line-height: 22px;
     }
-
+    .first_section-list {
+        margin-top: 20px;
+    }
+    label.checkbox {
+        text-align: start;
+        line-height: 19px;
+    }
+    .tarif_item {
+        padding: 30px;
+    }
+    .callback_form {
+        padding: 20px 20px 15px;
+    }
 
 
 }
