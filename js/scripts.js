@@ -5,6 +5,7 @@ $(() => {
         dots: false,
         arrows: true,
         infinite: true,
+        adaptiveHeight: true,
         slidesToShow: 2,
         slidesToScroll: 1,
         responsive: [{

@@ -1,11 +1,11 @@
 @media print, (max-width: 1023px) {
 
     :root {
-        /* --font_size: 14px; */
         --font_size_title: 24px;
     }
     .title {
         line-height: 30px;
+        margin-bottom: 30px;
     }
     header .desc {
         display: none;
@@ -22,6 +22,9 @@
         margin-bottom: 10px;
         margin-left: 0;
     }
+    .first_section-list li span {
+        margin-top: 3px;
+    }
     .benefits_list li {
         font-size: 16px;
     }
@@ -33,6 +36,11 @@
     }
     .field_box {
         flex-direction: column;
+        margin-left: 0;
+    }
+    .field_box > * {
+        width: 100%;
+        margin-left: 00px;
     }
     .callback_form .line .field input {
         width: 100%;
@@ -50,17 +58,15 @@
     }
     .advantages_items > * {
         width: 100%;
-        margin-left: 0px;
+        margin-left: 0;
     }
     .tarif_items {
-        margin-left: 0;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
+        padding: 0;
     }
     .tarif_items > * {
-        width: 100%;
-        margin-left: 0px;
         max-width: 390px;
         margin-bottom: 30px;
     }
@@ -121,6 +127,57 @@
     .tarif_title br {
         display: none;
     }
+    header .phone a {
+        line-height: 28px;
+    }
+    header .time {
+        font-size: 13px;
+        line-height: 20px;
+    }
+    header .callback_btn {
+        width: 160px;
+        height: 50px;
+        font-size: 16px;
+    }
+    .first_section-title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .price-green img {
+        width: 32px;
+        height: auto;
+    }
+    .tarif_title {
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 30px;
+    }
+    .additionally_items {
+        padding: 0 30px;
+    }
+    .reviews {
+        padding-top: 40px;
+    }
+    .reviews_item {
+        display: flex !important;
+        flex-wrap: wrap;
+    }
+    .reviews_item-text {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .reviews_item-info {
+        margin-left: 20px;
+    }
+    .reviews_item-img {
+        width: 200px;
+        height: auto;
+    }
+    .question {
+        padding-bottom: 43px;
+    }
+
+
 
 
 

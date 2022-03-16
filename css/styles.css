@@ -137,7 +137,7 @@ input[type=number]
 
 :focus
 {
-    outline: 0;
+    /* outline: 0; */
 }
 
 :hover,
@@ -283,9 +283,9 @@ button
 .cont
 {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1210px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 20px;
 }
 
 
@@ -386,16 +386,6 @@ button
 
 
 
-
-
-
-
-
-
-
-
-
-
 /*------------------
     Form elements
 ------------------*/
@@ -478,11 +468,7 @@ button
 
 
 
-
-
-/*------------
-    Header
-------------*/
+/* HEADER */
 
 header {
     z-index: 9;
@@ -569,6 +555,7 @@ header .callback_btn:hover {
 
 .first_section {
     background: #F7FAFF;
+    padding: 0 15px;
 }
 .first_section-wrap {
     position: relative;
@@ -671,6 +658,7 @@ header .callback_btn:hover {
 
 
 
+/* BENEFITS */
 
 .benefits {
     background: #F7FAFF;
@@ -697,7 +685,7 @@ header .callback_btn:hover {
 
 
 
-
+/* COMPANY */
 
 .company {
     margin-top: 70px;
@@ -749,9 +737,12 @@ header .callback_btn:hover {
 
 
 
+/* APLICATION-FORM */
 
 .application-form {
-    margin-top: 130px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: #F7FAFF;
 }
 .application-form_wrap {
     background: #1A59BD;
@@ -759,8 +750,6 @@ header .callback_btn:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.cont {
 }
 .application-form_title {
     font-weight: 500;
@@ -779,8 +768,8 @@ header .callback_btn:hover {
     display: flex;
 }
 .callback_form .line .field {  
-    width: 100%;
-    margin-right: 20px;
+    width: 100%;   
+    margin-right: 20px; 
 }
 .callback_form .line .field input {
     width: 280px;
@@ -794,6 +783,9 @@ header .callback_btn:hover {
     color: var(--text_color);
     padding: 0 20px;
     border: none;
+}
+.callback_form .line .field input:focus {
+    border-color: var(--form_focus_color);
 }
 .callback_form .line .submit_btn {
     width: 200px;
@@ -884,10 +876,10 @@ input[type=checkbox]:checked + label.checkbox:after {
 
 
 
-
+/* ADVANTAGES */
 
 .advantages {
-    margin-top: 150px;
+    margin-top: 90px;
 }
 .title span {
     font-weight: 700;
@@ -928,6 +920,8 @@ input[type=checkbox]:checked + label.checkbox:after {
 }
 
 
+
+/* TARIF */
 
 .tarif {
     background: #1A59BD;
@@ -1030,7 +1024,7 @@ input[type=checkbox]:checked + label.checkbox:after {
 
 
 
-
+/* ADDITIONALLY */
 
 .additionally {
     margin-top: 90px;
@@ -1093,9 +1087,7 @@ input[type=checkbox]:checked + label.checkbox:after {
 
 
 
-
-
-
+/* REVIEWS */
 
 .reviews {
     padding-top: 90px;
@@ -1105,13 +1097,11 @@ input[type=checkbox]:checked + label.checkbox:after {
 .reviews_items {
     padding: 0 100px;
 }
-
 .reviews_item {
     padding: 40px;
     background: #fff;
     border-radius: 20px;
 }
-
 .reviews_item-name {
     margin-top: 20px;
     font-weight: 500;
@@ -1168,6 +1158,7 @@ input[type=checkbox]:checked + label.checkbox:after {
 
 
 
+/* CONTACTS */
 
 .contacts {
     margin-top: 90px;
@@ -1232,7 +1223,7 @@ input[type=checkbox]:checked + label.checkbox:after {
 
 
 
-
+/* QUESTION */
 
 .question {
     padding-top: 90px;
@@ -1241,6 +1232,7 @@ input[type=checkbox]:checked + label.checkbox:after {
 }
 .question_wrap {
     display: flex;
+    flex-wrap: nowrap;
     background: #fff;
     padding: 60px 60px 40px;
     border-radius: 20px;
@@ -1259,8 +1251,12 @@ input[type=checkbox]:checked + label.checkbox:after {
     color: var(--text_color);
 }
 .question_form {
-    width: 600px;
+    max-width: 600px;
     margin: 0 auto;
+    width: 100%;
+}
+.question_right {
+    width: 100%;
 }
 .question_form-line {
     display: flex;
@@ -1285,6 +1281,9 @@ input[type=checkbox]:checked + label.checkbox:after {
     color: var(--text_color);
     font-family: var(--font_family);
 }
+.question_form-field input:focus {
+    border: 1px solid var(--form_focus_color);
+}
 .question_form-line textarea {
     background: #FFFFFF;
     border: 1px solid #E8E8E8;
@@ -1298,6 +1297,9 @@ input[type=checkbox]:checked + label.checkbox:after {
     line-height: 28px;
     color: var(--text_color);
     font-family: var(--font_family);
+}
+.question_form-line textarea:focus {
+    border: 1px solid var(--form_focus_color);
 }
 .fieldset {
     width: 100%;
@@ -1348,8 +1350,7 @@ input[type=checkbox]:checked + label.checkbox:after {
 
 
 
-
-
+/* FOOTER */
 
 footer {
     padding: 20px 0 25px;
@@ -1366,9 +1367,6 @@ footer .cont {
     line-height: 22px;
     color: var(--text_color);
 }
-
-
-
 
 
 
@@ -1401,7 +1399,6 @@ footer .cont {
     color: #000000;  
     margin-bottom: 20px;  
 }
-
 .fancybox-slide--html .fancybox-close-small {
     color: #000;
     top: 0;
@@ -1416,7 +1413,6 @@ footer .cont {
     border-bottom-left-radius: 6px;
     border-top-right-radius: 6px;
 }
-
 .fancybox-button svg {
     position: relative;
     display: block;
