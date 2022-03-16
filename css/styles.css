@@ -580,14 +580,11 @@ header .callback_btn:hover {
 .first_section .cont {
     padding: 0;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
 }
-.first_section-description {
-    
-}
-.first_section .info {    
-
+.first_section-img {
+    flex-shrink: 0;
 }
 .first_section-title {
     font-weight: 700;
