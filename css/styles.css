@@ -283,9 +283,9 @@ button
 .cont
 {
     width: 100%;
-    max-width: 1210px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 15px;
 }
 
 
@@ -408,7 +408,7 @@ button
 }
 .form ::-webkit-input-placeholder {
     color: var(--form_placeholder_color);
-    font-size: var(--font_size);
+    font-size: 18px;
     font-weight: 400;
 }
 .form :-moz-placeholder {
@@ -470,7 +470,7 @@ button
     opacity: 0.8;
 }
 .modal .checkbox {
-    color: #363843;
+    color: var(--text_color);
 }
 .modal .checkbox a {
     color: inherit;
@@ -490,6 +490,7 @@ header {
     left: 0;
     width: 100%;
     padding: 17px 0;
+    background: #F7FAFF;
 }
 header .cont {
     justify-content: space-between;
@@ -527,7 +528,7 @@ header .phone a {
     font-weight: 700;
     font-size: 20px;
     line-height: 32px;
-    color: #363843;
+    color: var(--text_color);
 }
 header .time {
     font-weight: 400;
@@ -552,10 +553,10 @@ header .callback_btn:hover {
 
 .title {
     font-weight: 500;
-    font-size: 40px;
+    font-size: var(--font_size_title);
     line-height: 50px;
     text-align: center;
-    color: #363843;  
+    color: var(--text_color); 
     margin-bottom: 40px;
 }
 
@@ -566,8 +567,10 @@ header .callback_btn:hover {
     First section
 -------------------*/
 
-
 .first_section {
+    background: #F7FAFF;
+}
+.first_section-wrap {
     position: relative;
     z-index: 3;
     padding: 50px 100px;
@@ -597,12 +600,14 @@ header .callback_btn:hover {
     background: #C9FF56;
     padding: 0px 10px 0px 5px;
     border-radius: 12px;
-    color: #363843;
+    color: var(--text_color);
+    white-space: nowrap;
 }
 .price-blau {
     background: #5C9BFF;
     padding: 0px 10px 0px 5px;
     border-radius: 12px;
+    white-space: nowrap;
 }
 .first_section-desc {
     font-weight: 400;
@@ -649,7 +654,7 @@ header .callback_btn:hover {
 .btn-white {
     width: 320px;
     background: #fff;
-    color: #363843;
+    color: var(--text_color);
     margin-right: 20px;
 }
 .btn-blau {
@@ -667,7 +672,9 @@ header .callback_btn:hover {
 
 
 
-
+.benefits {
+    background: #F7FAFF;
+}
 .benefits_list {
     list-style: none;
     padding: 31px 58px;
@@ -678,6 +685,10 @@ header .callback_btn:hover {
 .benefits_list li {
     display: flex;
     align-items: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--text_color);
 }
 .benefits_list li img {
     margin-right: 22px;
@@ -704,10 +715,18 @@ header .callback_btn:hover {
     margin-bottom: 30px;
 }
 .company_item {
-    height: 219px;
     position: relative;
 }
+.company_item-img {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 100%;
+}
 .company_item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -719,7 +738,7 @@ header .callback_btn:hover {
     font-weight: 700;
     font-size: 20px;
     line-height: 28px;
-    color: #363843;
+    color: var(--text_color);
     position: absolute;
     bottom: 14px;
     left: 14px;
@@ -772,7 +791,7 @@ header .callback_btn:hover {
     font-size: 18px;
     line-height: 28px;
     font-weight: 400;
-    color: #363843;
+    color: var(--text_color);
     padding: 0 20px;
     border: none;
 }
@@ -887,6 +906,7 @@ input[type=checkbox]:checked + label.checkbox:after {
 }
 .advantages_item {
     display: flex;
+    justify-content: space-between;
     background: #F7FAFF;
     border-radius: 20px;
 }
@@ -897,14 +917,14 @@ input[type=checkbox]:checked + label.checkbox:after {
     font-weight: 500;
     font-size: 26px;
     line-height: 32px;
-    color: #363843;  
+    color: var(--text_color);
     margin-bottom: 10px; 
 }
 .advantages_item-text {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    color: #363843;
+    color: var(--text_color);
 }
 
 
@@ -917,7 +937,7 @@ input[type=checkbox]:checked + label.checkbox:after {
 }
 .tarif_title {
     font-weight: 500;
-    font-size: 40px;
+    font-size: var(--font_size_title);
     line-height: 50px;
     text-align: center;
     color: #FFFFFF;
@@ -950,31 +970,34 @@ input[type=checkbox]:checked + label.checkbox:after {
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
-    color: #363843;
+    color: var(--text_color);
 }
 .tarif_item-price {
     font-weight: 500;
-    font-size: 40px;
+    font-size: var(--font_size_title);
     line-height: 50px;
-    color: #363843;
+    color: var(--text_color);
 }
 .tarif_item-price span {
     font-weight: 500;
     font-size: 18px;
     line-height: 28px;
-    color: #363843;
+    color: var(--text_color);
 }
 .tarif_item-list {
     list-style: none;    
 }
 .tarif_item-list li {
+    position: relative;
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
-    color: #363843;
-    margin-bottom: 60px;
+    color: var(--text_color);
+    margin-bottom: 30px;
+    padding-bottom: 30px;
     display: flex;
     align-items: center;
+    border-bottom: 1px solid #E8E8E8;
 }
 .tarif_item-list li:last-child {
     margin-bottom: 27px;
@@ -1027,14 +1050,14 @@ input[type=checkbox]:checked + label.checkbox:after {
     font-weight: 500;
     font-size: 18px;
     line-height: 28px;
-    color: #363843;  
+    color: var(--text_color);
     margin-bottom: 10px; 
 }
 .additionally_item-text {
     font-weight: 400;
     font-size: 14px;
     line-height: 22px;
-    color: #363843;
+    color: var(--text_color);
     margin-bottom: 35px;
 }
 .additionally_item {
@@ -1094,20 +1117,20 @@ input[type=checkbox]:checked + label.checkbox:after {
     font-weight: 500;
     font-size: 18px;
     line-height: 28px;
-    color: #363843;   
+    color: var(--text_color);
 }
 .reviews_item-company {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    color: #363843;
+    color: var(--text_color);
     margin-bottom: 20px;
 }
 .reviews_item-text {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    color: #363843;
+    color: var(--text_color);
 }
 .slick-slide {
     margin: 0 15px;
@@ -1155,6 +1178,7 @@ input[type=checkbox]:checked + label.checkbox:after {
 }
 .contacts_items {
     column-count: 3;
+    column-gap: 25px;
 }
 .contacts_item {
     margin-bottom: 20px;
@@ -1170,13 +1194,13 @@ input[type=checkbox]:checked + label.checkbox:after {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    color: #363843;    
+    color: var(--text_color);  
 }
 .contacts_item-text-phone {
     font-weight: 500;
     font-size: 18px;
     line-height: 28px;
-    color: #363843; 
+    color: var(--text_color);
     text-decoration: none;
 }
 .contacts_item-text-email {
@@ -1232,7 +1256,7 @@ input[type=checkbox]:checked + label.checkbox:after {
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
-    color: #363843;  
+    color: var(--text_color);
 }
 .question_form {
     width: 600px;
@@ -1258,7 +1282,7 @@ input[type=checkbox]:checked + label.checkbox:after {
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
-    color: #363843;
+    color: var(--text_color);
     font-family: var(--font_family);
 }
 .question_form-line textarea {
@@ -1272,7 +1296,7 @@ input[type=checkbox]:checked + label.checkbox:after {
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
-    color: #363843;
+    color: var(--text_color);
     font-family: var(--font_family);
 }
 .fieldset {
@@ -1295,7 +1319,7 @@ input[type=checkbox]:checked + label.checkbox:after {
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
-    color: #363843;
+    color: var(--text_color);
 }
 .question .submit_btn {
     background: #5C9BFF;
@@ -1340,7 +1364,7 @@ footer .cont {
     font-weight: 400;
     font-size: 14px;
     line-height: 22px;
-    color: #363843;
+    color: var(--text_color);
 }
 
 

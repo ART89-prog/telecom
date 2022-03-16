@@ -1,9 +1,129 @@
 @media print, (max-width: 1023px) {
 
     :root {
-        --font_size: 14px;
-        --font_size_title: 32px;
+        /* --font_size: 14px; */
+        --font_size_title: 24px;
     }
+    .title {
+        line-height: 30px;
+    }
+    header .desc {
+        display: none;
+    }
+    .first_section .info {
+        max-width: 410px;
+    }
+    .first_section-list {
+        flex-direction: column;
+        margin-left: 0;
+    }
+    .first_section-list > * {
+        width: 100%;
+        margin-bottom: 10px;
+        margin-left: 0;
+    }
+    .benefits_list li {
+        font-size: 16px;
+    }
+    .title br {
+        display: none;
+    }
+    .company_items > * {
+        width: calc(100%/3 - 30px);
+    }
+    .field_box {
+        flex-direction: column;
+    }
+    .callback_form .line .field input {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .callback_form .line .submit_btn {
+        margin-top: 0;
+    }
+    .application-form_title {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .advantages_items {
+        margin-left: 0;
+    }
+    .advantages_items > * {
+        width: 100%;
+        margin-left: 0px;
+    }
+    .tarif_items {
+        margin-left: 0;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .tarif_items > * {
+        width: 100%;
+        margin-left: 0px;
+        max-width: 390px;
+        margin-bottom: 30px;
+    }
+    .slick-list{
+        padding:0 20% 0 0;
+    }
+    .reviews_items {
+        padding: 0;
+    }
+    .slick-dots{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .slick-dots li{
+        list-style: none;
+        margin: 0px 5px;
+    }
+    .slick-dots button{
+        font-size: 0;
+        width: 10px;
+        height: 10px;
+        background: #E8E8E8;
+        border-radius: 50%;
+    }
+    .slick-dots li.slick-active button{
+        background: #1A59BD;
+        width: 10px;
+        height: 10px;	
+    }
+    .contacts_items {
+        column-count: 2;
+        margin-bottom: 40px;
+    }
+    .contacts_items br {
+        display: none;
+    }
+    .contacts_item-text br {
+        display: block;
+    }
+    .btn {
+        font-size: 16px;
+        height: 58px;
+    }
+    .btn-white {
+        width: 289px;
+    }
+    .btn-blau {
+        width: 222px;
+    }
+    .first_section .btns {
+        margin-right: -180px;
+    }
+    .callback_form {
+        padding: 40px;
+    }
+    .tarif_title br {
+        display: none;
+    }
+
+
+
 
 
 }

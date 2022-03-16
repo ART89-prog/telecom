@@ -4,7 +4,134 @@
         --font_size: 14px;
         --font_size_title: 28px;
     }
-
+    header .contacts {
+        display: none !important;
+    }
+    .contacts_mob {
+        display: block !important;
+    }
+    .first_section-img {
+        display: none !important;
+    }
+    .first_section-img-mob {
+        display: block !important;
+    }
+    .first_section .cont {
+        flex-direction: column;
+    }
+    .first_section {
+        padding: 20px;
+    }
+    .first_section .info {
+        max-width: 100%;
+    }
+    .first_section-img-mob img {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .first_section .btns {
+        flex-direction: column;
+    }
+    .first_section-wrap {
+        padding: 20px;
+    }
+    .btn-white {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+        margin-right: 0px;
+    }
+    .first_section .btns {
+        margin-right: 0px;
+    }
+    .btn-blau {
+        width: 100%;
+    }
+    .company_items > * {
+        width: calc(100%/2 - 30px);
+    }
+    .application-form_img {
+        display: none;
+    }
+    .question_wrap {
+        flex-direction: column;
+    }
+    .question_form {
+        width: 100%;
+    }
+    .advantages_item-img-mob {
+        display: block!important;
+    }
+    .advantages_item-img {
+        display: none!important;
+    }
+    .advantages_item-info {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 22px;
+    }
+    .advantages_item-title {
+        margin-bottom: 0;
+        margin-left: 17px;
+    }
+    .tarif_items {
+        padding: 0;
+    }
+    .first_section-wrap {
+        border-radius: 20px;
+    }
+    .company_item-text {
+        font-size: 13px;
+        line-height: 13px;
+        padding: 6px 10px;
+        bottom: 9px;
+        left: 9px;
+        border-radius: 6px;
+    }
+    .company_item img {
+        border-radius: 10px;
+    }
+    .callback_form {
+        padding: 30px;
+    }
     
+
+   
+}
+
+
+@media print, (max-width: 600px) {
+    .contacts_items {
+        column-count: 1;
+    }
+    footer .cont {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer_text {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+    footer {
+        padding: 40px 0 25px;
+    }
+    .additionally_items {
+        margin-left: 0;
+    }
+    .additionally_items > * {
+        width: 100%;
+        margin-left: 0;
+    }
+    .benefits_list li {
+        font-size: 14px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .benefits_list li img {
+        margin-right: 0px;
+        margin-bottom: 11px;
+    }
 
 }
