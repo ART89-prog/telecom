@@ -66,6 +66,14 @@
     .additionally_item-text {
         margin-bottom: 15px;
     }
+    .additionally_item-img {
+        margin: auto auto 0;
+    }
+    .additionally_item-img img {
+        max-width: 220px;
+        text-align: center;
+        display: block;
+    }
     .slick-slide img {
         width: 100%;
     }
@@ -135,6 +143,9 @@
     .question {
         padding-top: 60px;
         padding-bottom: 60px;
+    }
+    .question_left {
+        margin-right: 20px;
     }
 
 

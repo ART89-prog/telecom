@@ -453,7 +453,6 @@ button
     align-items: center;
     align-content: center;
     flex-wrap: wrap;
-    margin-bottom: 12px;
     border-radius: 12px;
 }
 .form .submit_btn:hover {
@@ -461,6 +460,7 @@ button
 }
 .modal .checkbox {
     color: var(--text_color);
+    margin-top: 20px;
 }
 .modal .checkbox a {
     color: inherit;
@@ -708,7 +708,7 @@ header .callback_btn:hover {
 .company_item-img {
     position: relative;
     overflow: hidden;
-    padding-bottom: 100%;
+    padding-bottom: 81%;
 }
 .company_item img {
     position: absolute;
@@ -719,6 +719,18 @@ header .callback_btn:hover {
     height: 100%;
     object-fit: cover;
     border-radius: 20px;
+}
+.company_item-img:after {
+	content: "";
+	display: block;    
+	width: 100%;
+	height: 100%;    
+	position: absolute;
+	top: 0;      
+	left: 0;   
+	background: transparent;
+	background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+	border-radius: 20px;
 }
 .company_item-text {
     padding: 7px 13px;
@@ -762,7 +774,7 @@ header .callback_btn:hover {
     display: flex;
 }
 .callback_form {
-    padding: 50px;
+    padding: 50px 50px 30px;
 }
 .callback_form .line {
     display: flex;
@@ -804,7 +816,6 @@ header .callback_btn:hover {
 }
 .callback_form .checkbox {
     width: auto;
-    margin-top: 16px;
 }
 input[type=checkbox] {
     display: none;
@@ -994,15 +1005,13 @@ input[type=checkbox]:checked + label.checkbox:after {
     border-bottom: 1px solid #E8E8E8;
 }
 .tarif_item-list li:last-child {
-    margin-bottom: 27px;
+    margin-bottom: 0;
+    border-bottom: none;
 }
 .tarif_item-list li svg {
     margin-right: 10px;
 }
-.tarif_link {
-   text-decoration: none; 
-}
-.tarif_link span {    
+.tarif_link {    
     width: 100%;
     height: 62px;
     background: #5C9BFF;
@@ -1241,21 +1250,16 @@ input[type=checkbox]:checked + label.checkbox:after {
     text-align: start;
     margin-bottom: 10px;
 }
-.question_left {
-    margin-right: 25px;
-}
 .question_text {
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
     color: var(--text_color);
 }
-.question_form {
-    max-width: 600px;
-    margin: 0 auto;
-    width: 100%;
-}
 .question_right {
+    width: 100%;    
+    max-width: 600px;
+    margin-left: 77px;
     width: 100%;
 }
 .question_form-line {
@@ -1331,7 +1335,6 @@ input[type=checkbox]:checked + label.checkbox:after {
     line-height: 28px;
     color: #FFFFFF;
     width: 100%;
-    margin-top: 20px;
     margin-bottom: 0;
     transition: all 0.5s;
 }

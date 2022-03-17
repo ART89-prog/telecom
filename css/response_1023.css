@@ -179,7 +179,10 @@
     .company_title br {
         display: none;
     }
-
+    .question_right {
+        max-width: 100%;
+        margin-left: 0;
+    }
 
 
 
