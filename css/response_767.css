@@ -80,7 +80,7 @@
     }
     .tarif_items {
         padding: 0;
-        flex-direction: column;
+        flex-direction: column-reverse;
         margin-left: 0;
     }
     .tarif_items > * {
