@@ -2,7 +2,7 @@
 
     :root {
         --font_size: 14px;
-        --font_size_title: 26px;
+        --font_size_title: 24px;
     }
 
     .cont {
@@ -34,6 +34,16 @@
     }
     .callback_form {
         padding: 20px 20px 15px;
+    }
+
+    .company_title {
+        max-width: 350px;
+    }
+    .company_title br {
+        display: block;
+    }
+    .application-form_title br {
+        display: block;
     }
 
 

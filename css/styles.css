@@ -691,6 +691,15 @@ header .callback_btn:hover {
     margin-top: 70px;
     margin-bottom: 70px;
 }
+.company_title {
+    max-width: 1000px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto 40px;
+}
+.company_title br {
+    display: none;
+}
 .company_items {
     display: flex; 
     margin-left: -30px;   
@@ -769,6 +778,11 @@ header .callback_btn:hover {
     line-height: 36px;
     color: #FFFFFF;
     margin-bottom: 30px;
+    max-width: 760px;
+    width: 100%;
+}
+.application-form_title br {
+    display: none;
 }
 .field_box {
     display: flex;
