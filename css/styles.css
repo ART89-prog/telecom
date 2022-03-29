@@ -951,6 +951,9 @@ input[type=checkbox]:checked + label.checkbox:after {
     line-height: 24px;
     color: var(--text_color);
 }
+.advantages_item-text br {
+    display: none;
+}
 
 
 
@@ -1067,6 +1070,9 @@ input[type=checkbox]:checked + label.checkbox:after {
     padding-bottom: 90px;
 }
 .additionally_title br {
+    display: none;
+}
+.additionally_item-text br {
     display: none;
 }
 .additionally_items {
