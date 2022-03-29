@@ -45,6 +45,18 @@
     .application-form_title br {
         display: block;
     }
+    .advantages_title br {
+        display: block;
+    }
+    .tarif_title br {
+        display: block;
+    }
+    .additionally_title br {
+        display: block;
+    }
+    .question_text {
+        font-size: 16px;
+    }
 
 
 }
