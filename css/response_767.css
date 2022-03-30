@@ -235,5 +235,8 @@
         margin-right: 0px;
         margin-bottom: 11px;
     }
+    .additionally_item-title br {
+        display: none;
+    }
 
 }

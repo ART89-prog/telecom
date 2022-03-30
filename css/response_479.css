@@ -63,6 +63,12 @@
     .additionally_item-text br {
         display: block;
     }
+    .first_section-title br {
+        display: block;
+    }
+    .first_section-list span br {
+        display: block;
+    }
 
 
 }
